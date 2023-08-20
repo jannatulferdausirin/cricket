@@ -1,0 +1,42 @@
+.stage {
+  background-color: skyblue;
+  height: 400px;
+  width: 800px;
+
+  margin: 0 auto;
+}
+.ball {
+  height: 120px;
+  width: 120px;
+  background-color: orange;
+  border-radius: 50%;
+  position: relative;
+ animation: sliding 2s ease-in-out 0.5s infinite alternate;
+ animation-play-state: running;
+}
+@keyframes sliding{
+    0%{
+        background-color: orange;
+        left:0;
+        top: 0;
+    }
+    25%{
+        top: 280px;
+        background-color:orangered;
+    }
+    50%{
+        top: 0%;
+         background-color: orange;
+    }
+    75%{
+        top:280px ;
+         background-color:orangered;
+    }
+    100%{
+           background-color: orange;
+           left: 670px;
+           top: 0%;
+    }
+}
+
+
